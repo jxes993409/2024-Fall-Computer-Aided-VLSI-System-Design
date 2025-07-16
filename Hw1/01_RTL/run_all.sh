@@ -1,0 +1,21 @@
+./01_run I0
+./01_run I1
+./01_run I2
+./01_run I3
+./01_run I4
+./01_run I5
+./01_run I6
+./01_run I7
+./01_run I8
+./01_run I9
+./01_run I0_
+./01_run I1_
+./01_run I2_
+./01_run I3_
+./01_run I4_
+./01_run I5_
+./01_run I6_
+./01_run I7_
+./01_run I8_
+./01_run I9_
+# ./01_run MIX
