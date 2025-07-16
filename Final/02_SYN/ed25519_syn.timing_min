@@ -1,0 +1,319 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ed25519' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : ed25519
+Version: T-2022.03
+Date   : Fri Dec 13 19:48:27 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: u_point/stage_counter_r_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/stage_counter_r_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  u_point/stage_counter_r_reg[0]/CK (DFFHQX8)             0.00 #     0.50 r
+  u_point/stage_counter_r_reg[0]/Q (DFFHQX8)              0.22       0.72 r
+  U138417/Y (NOR2XL)                                      0.07       0.79 f
+  u_point/stage_counter_r_reg[0]/D (DFFHQX8)              0.00       0.79 f
+  data arrival time                                                  0.79
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clock uncertainty                                       0.10       0.60
+  u_point/stage_counter_r_reg[0]/CK (DFFHQX8)             0.00       0.60 r
+  library hold time                                      -0.07       0.53
+  data required time                                                 0.53
+  --------------------------------------------------------------------------
+  data required time                                                 0.53
+  data arrival time                                                 -0.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: u_point/permute_stage_r_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/permute_stage_r_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  u_point/permute_stage_r_reg[1]/CK (DFFHQX4)             0.00 #     0.50 r
+  u_point/permute_stage_r_reg[1]/Q (DFFHQX4)              0.21       0.71 r
+  U144606/Y (AOI2BB1X1)                                   0.15       0.86 r
+  u_point/permute_stage_r_reg[1]/D (DFFHQX4)              0.00       0.86 r
+  data arrival time                                                  0.86
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clock uncertainty                                       0.10       0.60
+  u_point/permute_stage_r_reg[1]/CK (DFFHQX4)             0.00       0.60 r
+  library hold time                                      -0.04       0.56
+  data required time                                                 0.56
+  --------------------------------------------------------------------------
+  data required time                                                 0.56
+  data arrival time                                                 -0.86
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.30
+
+
+  Startpoint: u_point/permute_stage_r_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/permute_stage_r_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  u_point/permute_stage_r_reg[0]/CK (DFFHQX8)             0.00 #     0.50 r
+  u_point/permute_stage_r_reg[0]/Q (DFFHQX8)              0.23       0.73 r
+  U144597/Y (AOI2BB1X1)                                   0.15       0.88 r
+  u_point/permute_stage_r_reg[0]/D (DFFHQX8)              0.00       0.88 r
+  data arrival time                                                  0.88
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clock uncertainty                                       0.10       0.60
+  u_point/permute_stage_r_reg[0]/CK (DFFHQX8)             0.00       0.60 r
+  library hold time                                      -0.03       0.57
+  data required time                                                 0.57
+  --------------------------------------------------------------------------
+  data required time                                                 0.57
+  data arrival time                                                 -0.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
+  Startpoint: u_point/r1_r_reg[254]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[254]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[254]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[254]/Q (DFFHQX4)        0.17       0.67 r
+  U157484/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[254]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[254]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[245]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[245]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[245]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[245]/Q (DFFHQX4)        0.17       0.67 r
+  U157537/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[245]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[245]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[235]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[235]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[235]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[235]/Q (DFFHQX4)        0.17       0.67 r
+  U157587/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[235]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[235]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[227]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[227]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[227]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[227]/Q (DFFHQX4)        0.17       0.67 r
+  U157630/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[227]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[227]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[183]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[183]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[183]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[183]/Q (DFFHQX4)        0.17       0.67 r
+  U157864/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[183]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[183]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[180]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[180]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[180]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[180]/Q (DFFHQX4)        0.17       0.67 r
+  U157875/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[180]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[180]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: u_point/r1_r_reg[181]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: u_point/P_7_x_r_reg[181]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u_point/r1_r_reg[181]/CK (DFFHQX4)       0.00 #     0.50 r
+  u_point/r1_r_reg[181]/Q (DFFHQX4)        0.17       0.67 r
+  U157872/Y (AO22X1)                       0.17       0.84 r
+  u_point/P_7_x_r_reg[181]/D (DFFQX1)      0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  u_point/P_7_x_r_reg[181]/CK (DFFQX1)     0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+1
