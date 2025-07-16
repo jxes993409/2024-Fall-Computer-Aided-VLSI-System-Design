@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Wed Nov 27 16:45:49 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: gradient_r_reg[2][3]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: o_out_data_r_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  gradient_r_reg[2][3]/CK (DFFRX2)         0.00 #     0.50 r
+  gradient_r_reg[2][3]/Q (DFFRX2)          0.64       1.14 f
+  U5109/Y (NOR2X1)                         0.33       1.47 r
+  U11384/Y (NOR2X4)                        0.16       1.63 f
+  U5006/Y (OAI21X2)                        0.13       1.76 r
+  U7404/Y (NAND3X2)                        0.20       1.96 f
+  U5287/Y (NOR2X4)                         0.13       2.09 r
+  U11391/Y (NOR2X2)                        0.09       2.18 f
+  U7405/Y (OAI22X2)                        0.22       2.40 r
+  U5288/Y (NAND2X4)                        0.13       2.54 f
+  U11421/Y (OAI21XL)                       0.28       2.82 r
+  U11422/Y (AOI21X1)                       0.28       3.09 f
+  U5286/Y (OAI21X2)                        0.23       3.33 r
+  U11425/Y (NAND3X2)                       0.17       3.50 f
+  U7343/Y (NAND4BX4)                       0.13       3.63 r
+  U8066/Y (AND2X8)                         0.17       3.80 r
+  U7413/Y (INVX16)                         0.08       3.88 f
+  U21241/Y (OAI21X1)                       0.27       4.15 r
+  U7348/Y (AOI21X2)                        0.15       4.29 f
+  U7407/Y (NAND3X2)                        0.14       4.43 r
+  o_out_data_r_reg[3]/D (DFFRX2)           0.00       4.43 r
+  data arrival time                                   4.43
+
+  clock i_clk (rise edge)                  4.20       4.20
+  clock network delay (ideal)              0.50       4.70
+  clock uncertainty                       -0.10       4.60
+  o_out_data_r_reg[3]/CK (DFFRX2)          0.00       4.60 r
+  library setup time                      -0.17       4.43
+  data required time                                  4.43
+  -----------------------------------------------------------
+  data required time                                  4.43
+  data arrival time                                  -4.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

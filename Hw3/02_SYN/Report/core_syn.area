@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : core
+Version: U-2022.12
+Date   : Wed Nov 27 16:45:49 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /slow.db)
+    sram_512x8 (File: /sram_512x8_slow_syn.db)
+
+Number of ports:                           33
+Number of nets:                         20024
+Number of cells:                        18685
+Number of combinational cells:          17364
+Number of sequential cells:              1315
+Number of macros/black boxes:               4
+Number of buf/inv:                       1642
+Number of references:                     185
+
+Combinational area:             167939.057546
+Buf/Inv area:                    13523.185809
+Noncombinational area:           48560.916325
+Macro/Black Box area:           123791.546875
+Net Interconnect area:         2619086.584503
+
+Total cell area:                340291.520745
+Total area:                    2959378.105248
+1
