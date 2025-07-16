@@ -1,0 +1,5 @@
+`include "../../r12921068_hw4/01_RTL/IOTDF.v"
+`include "../../r12921068_hw4/01_RTL/DES.v"
+// `include "../../r12921068_hw4/01_RTL/S_BOX.v"
+`include "../../r12921068_hw4/01_RTL/MAXMIN.v"
+`include "../../r12921068_hw4/01_RTL/CRC.v"
